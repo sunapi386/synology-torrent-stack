@@ -18,6 +18,7 @@ services:
       - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
       - WIREGUARD_ADDRESSES=${WIREGUARD_ADDRESSES:-10.14.0.2/16}
       - SERVER_CITIES=${SERVER_CITY:-San Jose}
+      - FIREWALL_INPUT_PORTS=${WEBUI_PORT:-8080}
       - TZ=${TZ:-America/Los_Angeles}
     volumes:
       - ./gluetun:/gluetun
